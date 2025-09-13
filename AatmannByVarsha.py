@@ -397,7 +397,7 @@ def Home():
                 <div x-show="open" @click.outside="open = false"
                      class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-2 z-50">
                   <a href="{{ url_for('profile') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
-                  <a href="{{ url_for('user_logout') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a>
+                  <a href="{{ url_for('Admin_logout') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a>
                 </div>
               {% else %}
                 <a href="{{ url_for('user_login') }}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700">Login</a>
@@ -1410,3 +1410,4 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
