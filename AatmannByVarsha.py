@@ -1399,10 +1399,10 @@ def robots_txt():
 def sitemap_xml():
     sitemap = """<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      <url><loc>https://www.aatmannbyvarsha.com/</loc></url>
-      <url><loc>https://www.aatmannbyvarsha.com/tarot</loc></url>
-      <url><loc>https://www.aatmannbyvarsha.com/numerology</loc></url>
-      <url><loc>https://www.aatmannbyvarsha.com/about</loc></url>
+      <url><loc>https://aatmann-by-varsha-tarot-numerology.onrender.com/</loc></url>
+      <url><loc>https://aatmann-by-varsha-tarot-numerology.onrender.com/tarot</loc></url>
+      <url><loc>https://aatmann-by-varsha-tarot-numerology.onrender.com/numerology</loc></url>
+      <url><loc>https://aatmann-by-varsha-tarot-numerology.onrender.com/about us</loc></url>
     </urlset>
     """
     return sitemap, 200, {"Content-Type": "application/xml"}
@@ -1410,4 +1410,3 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
-
