@@ -534,7 +534,7 @@ def Tarot():
       <meta name="robots" content="index, follow">
       <meta property="og:title" content="Aatmann By Varsha">
       <meta property="og:description" content="Aatmann By Varsha">
-      <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/tarot">
+      <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/tarot">
       <meta name="twitter:card" content="summary_large_image">
 
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -634,7 +634,7 @@ def Numerology():
       <meta name="robots" content="index, follow">
       <meta property="og:title" content="Aatmann By Varsha">
       <meta property="og:description" content="Aatmann By Varsha">
-      <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/numerology">
+      <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/numerology">
       <meta name="twitter:card" content="summary_large_image">
 
       <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}?v=2" type="image/png" sizes="32x32">
@@ -748,7 +748,7 @@ def user_login():
             <meta name="robots" content="index, follow">
             <meta property="og:title" content="Aatmann By Varsha">
             <meta property="og:description" content="Aatmann By Varsha">
-            <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/user_login">
+            <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/user_login">
             <meta name="twitter:card" content="summary_large_image">
 
             <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}?v=2" type="image/png" sizes="32x32">
@@ -913,7 +913,7 @@ def About():
           <meta name="robots" content="index, follow">
           <meta property="og:title" content="Aatmann By Varsha">
           <meta property="og:description" content="Aatmann By Varsha">
-          <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/about">
+          <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/about">
           <meta name="twitter:card" content="summary_large_image">
 
           <script src="https://cdn.tailwindcss.com"></script>
@@ -1138,7 +1138,7 @@ def book_tarot_detail(duration):
       <meta name="robots" content="index, follow">
       <meta property="og:title" content="Aatmann By Varsha">
       <meta property="og:description" content="Aatmann By Varsha">
-      <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/book-tarot">
+      <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/book-tarot">
       <meta name="twitter:card" content="summary_large_image">
 
       <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}?v=2" type="image/png" sizes="32x32">
@@ -1270,7 +1270,7 @@ def profile():
         <meta name="robots" content="index, follow">
         <meta property="og:title" content="Aatmann By Varsha">
         <meta property="og:description" content="Aatmann By Varsha">
-        <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/profile">
+        <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/profile">
         <meta name="twitter:card" content="summary_large_image">
 
         <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}?v=2" type="image/png" sizes="32x32">
@@ -1410,5 +1410,6 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
