@@ -938,12 +938,11 @@ def akashic_records():
           text-align: center;
         }
         h1 {
+          font-size: 2.5rem;
           position: fixed;
           top: 1rem;
           font-family: 'Dancing Script', cursive;
-          font-size: 2.5rem;
           color: #5b21b6;
-          margin-bottom: 1rem;
         }
         p {
           color: #374151;
@@ -995,10 +994,10 @@ def crystals():
           text-align: center;
         }
         h1 {
+          font-size: 2.5rem;
           position: fixed;
           top: 1rem;
           font-family: 'Dancing Script', cursive;
-          font-size: 2.5rem;
           color: #5b21b6;
         }
         p {
@@ -1534,5 +1533,6 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
