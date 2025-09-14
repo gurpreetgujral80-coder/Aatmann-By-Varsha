@@ -938,6 +938,8 @@ def akashic_records():
           text-align: center;
         }
         h1 {
+          position: fixed;
+          top: 1rem;
           font-family: 'Dancing Script', cursive;
           font-size: 2.5rem;
           color: #5b21b6;
@@ -981,7 +983,6 @@ def crystals():
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
       <script src="https://cdn.tailwindcss.com"></script>
-
       <style>
         body {
           font-family: 'Inter', sans-serif;
@@ -994,10 +995,11 @@ def crystals():
           text-align: center;
         }
         h1 {
+          position: fixed;
+          top: 1rem;
           font-family: 'Dancing Script', cursive;
           font-size: 2.5rem;
           color: #5b21b6;
-          margin-bottom: 1rem;
         }
         p {
           color: #374151;
@@ -1532,4 +1534,5 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
