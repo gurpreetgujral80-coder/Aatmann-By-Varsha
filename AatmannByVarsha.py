@@ -907,117 +907,7 @@ def user_login():
         </html>
     ''')
 
-@app.route("/akashic-records")
-def akashic_records():
-    return render_template_string("""
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Aatmann By Varsha - Akashic Records (Under Development)</title>
-
-      <!-- 🚫 Hide from Google until ready -->
-      <meta name="robots" content="noindex, nofollow">
-
-      <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="32x32">
-      <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-      <script src="https://cdn.tailwindcss.com"></script>
-
-      <style>
-        body {
-          font-family: 'Inter', sans-serif;
-          background: linear-gradient(to bottom right, #f3e8ff, #c7d2fe);
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-        heading {
-          font-size: 2.5rem;
-          position: fixed;
-          top: 1rem;
-          font-family: 'Dancing Script', cursive;
-          color: #5b21b6;
-        }
-        p {
-          color: #374151;
-          font-size: 1.2rem;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-      </style>
-    </head>
-    <body>
-      <a href="{{ url_for('Home') }}" class="fixed top-4 left-4 w-10">
-        <img src="{{ url_for('static', filename='home.jpeg') }}" alt="Home">
-      </a>
-
-      <heading>🚧 Akashic Records</heading>
-      <p>This page is under development. Soon you’ll explore deep soul wisdom and past life insights here. ✨</p>
-    </body>
-    </html>
-    """)
-
-
-@app.route("/crystals")
-def crystals():
-    return render_template_string("""
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Aatmann By Varsha - Crystals (Under Development)</title>
-
-      <!-- 🚫 Hide from Google until ready -->
-      <meta name="robots" content="noindex, nofollow">
-
-      <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="32x32">
-      <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <style>
-        body {
-          font-family: 'Inter', sans-serif;
-          background: linear-gradient(to bottom right, #f3e8ff, #c7d2fe);
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-        heading {
-          font-size: 2.5rem;
-          position: fixed;
-          top: 1rem;
-          font-family: 'Dancing Script', cursive;
-          color: #5b21b6;
-        }
-        p {
-          color: #374151;
-          font-size: 1.2rem;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-      </style>
-    </head>
-    <body>
-      <a href="{{ url_for('Home') }}" class="fixed top-4 left-4 w-10">
-        <img src="{{ url_for('static', filename='home.jpeg') }}" alt="Home">
-      </a>
-
-      <heading>🚧 Crystals Page</heading>
-      <p>This page is under construction. Soon you’ll discover healing and energy-balancing with crystals here. 🌌</p>
-    </body>
-    </html>
-    """)
+<!--REPLACE_ME-->
 
 @app.route('/about us')
 def About():
@@ -1533,6 +1423,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
