@@ -937,7 +937,7 @@ def akashic_records():
           justify-content: center;
           text-align: center;
         }
-        h1 {
+        heading {
           font-size: 2.5rem;
           position: fixed;
           top: 1rem;
@@ -957,7 +957,7 @@ def akashic_records():
         <img src="{{ url_for('static', filename='home.jpeg') }}" alt="Home">
       </a>
 
-      <h1>🚧 Akashic Records Page</h1>
+      <heading>🚧 Akashic Records</heading>
       <p>This page is under development. Soon you’ll explore deep soul wisdom and past life insights here. ✨</p>
     </body>
     </html>
@@ -993,7 +993,7 @@ def crystals():
           justify-content: center;
           text-align: center;
         }
-        h1 {
+        heading {
           font-size: 2.5rem;
           position: fixed;
           top: 1rem;
@@ -1013,7 +1013,7 @@ def crystals():
         <img src="{{ url_for('static', filename='home.jpeg') }}" alt="Home">
       </a>
 
-      <h1>🚧 Crystals Page</h1>
+      <heading>🚧 Crystals Page</heading>
       <p>This page is under construction. Soon you’ll discover healing and energy-balancing with crystals here. 🌌</p>
     </body>
     </html>
@@ -1533,6 +1533,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
