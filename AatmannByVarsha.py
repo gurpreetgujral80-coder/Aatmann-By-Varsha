@@ -253,7 +253,7 @@ def Home():
           <meta name="robots" content="index, follow">
           <meta property="og:title" content="Aatmann By Varsha">
           <meta property="og:description" content="Aatmann By Varsha - Tarot & Numerology readings for clarity and guidance.">
-          <meta property="og:url" content="https://aatmannbyvarsha.pythonanywhere.com/">
+          <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/">
           <meta name="twitter:card" content="summary_large_image">
           <meta name="google-site-verification" content="UY6FzHRJXPd0P4vhPQ_kwUXPSUNx4KLln0Gkd6yQK5A" />
 
@@ -1410,4 +1410,5 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
