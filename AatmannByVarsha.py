@@ -259,7 +259,7 @@ def Home():
 
           <script src="https://cdn.tailwindcss.com"></script>
           <script src="https://unpkg.com/alpinejs" defer></script>
-          <link rel="icon" href="/favicon.ico" sizes="any">
+          <link rel="icon" href="static/favicon.png" sizes="any">
           <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}?v=2" type="image/png" sizes="32x32">
           <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}?v=2">
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -1410,6 +1410,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
