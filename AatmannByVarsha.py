@@ -383,6 +383,38 @@ def Home():
               line-height: 1.6;
               font-size: 1.05rem;
             }
+            /* Shared styling for Akashic & Crystals */
+            .akashic-section, .crystals-section {
+              margin-top: 1.5rem;
+              padding: 1rem;
+              background: rgba(255,255,255,0.06);
+              border-radius: 12px;
+              max-width: 900px;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              box-sizing: border-box;
+            }
+            .akashic-section h3, .crystals-section h3 {
+              font-family: 'Dancing Script', cursive;
+              font-weight: 700;
+              color: #5b21b6;
+              margin: 0;
+              letter-spacing: 0.5px;
+            }
+            .akashic-section img, .crystals-section img {
+              display: block;
+              margin: 1rem auto;
+              width: 100%;
+              max-width: 480px;
+              border-radius: 12px;
+              box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            }
+            .akashic-section p, .crystals-section p {
+              color: #2d3748;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            }
           </style>
         </head>
         <body class="flex flex-col min-h-screen" id="main">
@@ -465,9 +497,40 @@ def Home():
           <div class="flex justify-center gap-4 flex-wrap">
             <a href="{{ url_for('Tarot') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md font-semibold">Book a Tarot Reading</a>
           </div>
+
+          <!-- Akashic Records Section --> 
+            <section class="akashic-section" aria-labelledby="akashic-heading">
+              <h3 id="akashic-heading" style="font-size:2.5rem; font-family:'Dancing Script', cursive; color:#5b21b6; margin-bottom:1rem; text-align:center;">
+                Akashic Records
+              </h3>
+              <img src="{{ url_for('static', filename='akashic.jpg') }}" 
+                   alt="Akashic Records" title="Akashic Records" 
+                   style="max-width:500px; height:auto; margin:1rem auto; display:block; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.15);">
+              <p><strong>Tap into the records of your soul’s journey.</strong> The Akashic Records are believed to hold timeless insights from your past, present, and future. Accessing them can help you release blocks, understand karmic lessons, and align with your soul’s true path.</p>
+              <p style="margin-top:1rem;">Experience deep healing and clarity as you connect with the wisdom of your higher self.</p>
+              <p style="margin-top:1.5rem; font-family: 'Dancing Script', cursive; color:#6b7280; text-align:center; font-size: 1.8rem;">
+                — Akashic Page Coming Soon —
+              </p>
+            </section>
+
+            <!-- Crystals Section -->
+            <section class="crystals-section" aria-labelledby="crystals-heading" style="margin-top: -1rem">
+              <h3 id="crystals-heading" style="font-size:2.5rem; font-family:'Dancing Script', cursive; color:#5b21b6; margin-bottom:1rem; text-align:center;">
+                Crystals
+              </h3>
+              <img src="{{ url_for('static', filename='crystals.jpeg') }}" 
+                   alt="Crystals" title="Crystals" 
+                   style="max-width:500px; height:auto; margin:1rem auto; display:block; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.15);">
+              <p><strong>Explore the healing power of crystals.</strong> Crystals carry natural vibrations that can balance, protect, and restore your energy. They support emotional, mental, and spiritual well-being by harmonizing the flow of energy in your life.</p>
+              <p style="margin-top:1rem;">From protection to manifestation, crystals are timeless tools for transformation and inner balance.</p>
+              <p style="margin-top:1.5rem; font-family: 'Dancing Script', cursive; color:#6b7280; text-align:center; font-size: 1.8rem;">
+                — Crystals Page Coming Soon —
+              </p>
+            </section>
+          
           <section class="mt-10 bg-white/80 rounded-2xl p-8 shadow-md">
               <div class="max-w-5xl mx-auto text-center">
-                <h4 class="text-xl font-semibold text-purple-700">Why choose Numerology & Tarot with Varsha?</h4>
+                <h4 class="text-xl font-semibold text-purple-700">Why to choose Numerology & Tarot with Varsha?</h4>
 
                 <!-- Responsive grid: 2 cols on small, 3 cols on large -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 mt-6 text-left text-gray-700 text-sm sm:text-base">
@@ -1421,6 +1484,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
