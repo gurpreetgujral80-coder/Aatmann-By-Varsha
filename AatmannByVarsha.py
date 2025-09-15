@@ -11,7 +11,7 @@ import os
 import re
 
 app = Flask(__name__)
-app.secret_key = "Meet@123"
+app.secret_key = "ProGamerUnlimited"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bookings.db'
 db.init_app(app)
 
@@ -37,7 +37,7 @@ def favicon():
 def admin_login():
     if request.method == "POST":
         password = request.form["password"]
-        if password == "Meet@123":
+        if password == "ProGamerUnlimited":
             session["admin"] = True
             return redirect(url_for("admin_dashboard"))
     return render_template_string('''
@@ -1421,6 +1421,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
