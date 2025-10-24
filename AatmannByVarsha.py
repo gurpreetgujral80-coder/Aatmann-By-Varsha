@@ -262,7 +262,7 @@ def Home():
           <meta property="og:description" content="Aatmann By Varsha - Tarot & Numerology readings for clarity and guidance.">
           <meta property="og:url" content="https://aatmann-by-varsha-tarot-numerology.onrender.com/">
           <meta name="twitter:card" content="summary_large_image">
-          <meta name="google-site-verification" content="UY6FzHRJXPd0P4vhPQ_kwUXPSUNx4KLln0Gkd6yQK5A" />
+          <meta name="google-site-verification" content="BduYwKD-EkmHI2Lk-Avi__rmHbQDWq5UZgsXhvxCGm8" />
 
           <script src="https://cdn.tailwindcss.com"></script>
           <script src="https://unpkg.com/alpinejs" defer></script>
@@ -1484,6 +1484,7 @@ def sitemap_xml():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
 
